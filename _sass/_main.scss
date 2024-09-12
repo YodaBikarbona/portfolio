@@ -1,12 +1,11 @@
 ---
 ---
 /* _sass/_main.scss */
-@use 'sass:math';
 
 @mixin space($attribute) {
   @for $i from 1 to 6 {
     &-#{$i} {
-      #{$attribute}: math.div($i * 10px, 1);
+      #{$attribute}: $i * 10px / 1;
     }
   }
 }
@@ -14,7 +13,7 @@
 @mixin width-px($attribute) {
   @for $i from 1 to 1000 {
     &-#{$i} {
-      #{$attribute}: math.div($i * 1px, 1);
+      #{$attribute}: $i * 1px / 1;
     }
   }
 }
@@ -22,7 +21,7 @@
 @mixin height-px($attribute) {
   @for $i from 1 to 1000 {
     &-#{$i} {
-      #{$attribute}: math.div($i * 1px, 1);
+      #{$attribute}: $i * 1px / 1;
     }
   }
 }
@@ -30,7 +29,7 @@
 @mixin fontsize-px($attribute) {
   @for $i from 1 to 1000 {
     &-#{$i} {
-      #{$attribute}: math.div($i * 1px, 1);
+      #{$attribute}: $i * 1px / 1;
     }
   }
 }
