@@ -219,16 +219,11 @@ footer {
   width: 100%;
 }
 
-.home-outer-card {
-  height: 250px;
-  max-height: 500px;
-}
+.home-outer-card {}
 
 .home-inner-card {
   padding-top: 25px;
   padding-bottom: 25px;
-  height: 200px;
-  max-height: 200px;
 
   p {
     text-align: justify;
@@ -288,4 +283,11 @@ a {
 
 .copyright-footer {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 500px;
 }
