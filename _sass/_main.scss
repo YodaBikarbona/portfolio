@@ -228,12 +228,6 @@ footer {
   p {
     text-align: justify;
   }
-
-  @media (max-width: 768px) {
-    img {
-      display: none;
-    }
-  }
 }
 
 .space-line {
@@ -290,4 +284,10 @@ a {
   height: auto;
   object-fit: contain;
   max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
 }
