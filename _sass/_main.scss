@@ -291,3 +291,14 @@ a {
 .text-bg-info {
   background-color: #bdbcbc !important;
 }
+
+.page {
+  margin-left: 15%;
+  margin-right: 15%;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
