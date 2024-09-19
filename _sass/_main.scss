@@ -302,3 +302,11 @@ a {
   }
 
 }
+
+@media (max-width: 767px) {
+    button {
+      color: #000000;
+      background-color: #d3d4d5;
+      border-color: #c6c7c8;
+    }
+}
