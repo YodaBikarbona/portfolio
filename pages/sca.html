@@ -11,95 +11,161 @@ title: "Smart call assistant"
     <title>Smart call assistant</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{'/assets/stylesheets/main.css' | absolute_url}}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="dark-theme">
 
-  <div class="container content mt-5">
-      <div class="row portfolio-page">
-          <div class="col-12 space-line">
-              <h1>Smart call assistant</h1>
-              <div class="d-flex align-items-center mt-2">
-                  <i class="bi bi-building"></i>
-                  <span class="ms-2">
-                      <a href="https://uhp.digital/en/" target="_blank">UHP</a>,
-                      <a href="https://www.telekom.de/start" target="_blank">Deutsche Telekom</a>
-                  </span>
+  <div class="container content my-5">
+      <div class="portfolio-card p-4 p-md-5">
+          
+          <div class="row g-4 align-items-start">
+              <div class="col-lg-4 text-center">
+                  <div class="robot-img-container mb-4">
+                      <img src="/assets/images/486031740385063.jpg" alt="Smart Call Assistant" class="img-fluid rounded-4 robot-img">
+                  </div>
+                  
+                  <div class="quick-meta-box text-start">
+                      <div class="meta-item">
+                          <i class="bi bi-building"></i>
+                          <div>
+                              <small>Company/Client</small>
+                              <p>
+                                  <a href="https://uhp.digital/en/" target="_blank">UHP</a>, 
+                                  <a href="https://www.telekom.de/start" target="_blank">Deutsche Telekom</a>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="meta-item">
+                          <i class="bi bi-clock-history"></i>
+                          <div>
+                              <small>Duration</small>
+                              <p>2 Years</p>
+                          </div>
+                      </div>
+                      <div class="meta-item">
+                          <i class="bi bi-geo-alt"></i>
+                          <div>
+                              <small>Location</small>
+                              <p>Zagreb (remote)</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="d-flex align-items-center mt-2">
-                  <i class="bi bi-clock"></i> <span class="ms-2">2 years</span>
+
+              <div class="col-lg-8">
+                  <div class="row g-4">
+                      <div class="col-xl-7">
+                          <h1 class="project-title mb-1">Smart Call Assistant</h1>
+                          <p class="text-muted-custom mb-4">Smart Call Assistant is a voice-controlled AI-powered service that overcomes the drawbacks of synchronous telephone communication.</p>
+
+                          <div class="mb-4">
+                              <h5 class="section-subtitle">Project role</h5>
+                              <span class="custom-badge-role">Main backend developer</span>
+                          </div>
+
+                          <div class="mb-4">
+                              <h5 class="section-subtitle">Responsibility</h5>
+                              <div class="d-flex gap-2 mb-3 flex-wrap">
+                                  <span class="badge-tech-outline">TDD</span>
+                                  <span class="badge-tech-outline">SOLID</span>
+                                  <span class="badge-tech-outline">CLEAN</span>
+                              </div>
+                              <ul class="custom-list">
+                                  <li>Leading the implementation of microservices that connect mobile app to ML service.</li>
+                                  <li>Making sure that the services are written following the best practices like TDD, SOLID and CLEAN.</li>
+                                  <li>Modeling the data layer.</li>
+                                  <li>Mentoring the colleagues.</li>
+                                  <li>Choosing the right technologies for our solutions.</li>
+                                  <li>Making sure that the product is well documented.</li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <div class="col-xl-5">
+                          <div class="tech-stack-panel p-3">
+                              <h5 class="tech-panel-title mb-3">Tech Stack</h5>
+                              
+                              <div class="tech-group mb-3">
+                                  <div class="tech-group-header">Backend</div>
+                                  <div class="tech-items-row">
+                                      <div class="tech-item-icon" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                                      <div class="tech-item-icon" title="FastAPI"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastApi</span></div>
+                                      <div class="tech-item-icon" title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>Postgres</span></div>
+                                      <div class="tech-item-icon" title="Starlette"><i class="bi bi-lightning-charge text-warning"></i><span>Starlette</span></div>
+                                      <div class="tech-item-icon" title="SQLAlchemy"><i class="bi bi-database text-info"></i><span>SqlAlchemy</span></div>
+                                      <div class="tech-item-icon" title="Alembic"><i class="bi bi-arrow-down-up text-danger"></i><span>Alembic</span></div>
+                                      <div class="tech-item-icon" title="Asyncio"><i class="bi bi-arrow-repeat text-success"></i><span>Asyncio</span></div>
+                                  </div>
+                              </div>
+
+                              <div class="tech-group mb-3">
+                                  <div class="tech-group-header">DevOps</div>
+                                  <div class="tech-items-row">
+                                      <div class="tech-item-icon" title="GitLab"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab"><span>GitLab</span></div>
+                                      <div class="tech-item-icon" title="Azure"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><span>Azure</span></div>
+                                      <div class="tech-item-icon" title="Kubernetes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"><span>Kube</span></div>
+                                      <div class="tech-item-icon" title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+                                      <div class="tech-item-icon" title="Open Telekom Cloud"><i class="bi bi-cloud text-primary"></i><span>OTC Cloud</span></div>
+                                      <div class="tech-item-icon" title="Grafana"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana"><span>Grafana</span></div>
+                                      <div class="tech-item-icon" title="Kibana"><i class="bi bi-search text-info"></i><span>Kibana</span></div>
+                                  </div>
+                              </div>
+
+                              <div class="tech-group">
+                                  <div class="tech-group-header">AI & Other</div>
+                                  <div class="tech-items-row">
+                                      <div class="tech-item-icon" title="RasaAI"><i class="bi bi-robot text-purple"></i><span>RasaAI</span></div>
+                                      <div class="tech-item-icon" title="MS TTS / STT"><i class="bi bi-mic text-secondary"></i><span>MS TTS/STT</span></div>
+                                      <div class="tech-item-icon" title="Postman"><i class="bi bi-send-check text-warning"></i><span>Postman</span></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <div class="achievement-banner d-flex align-items-center gap-3 p-3">
+                              <div class="achievement-icon-wrap">
+                                  <i class="bi bi-shield-check"></i>
+                              </div>
+                              <div>
+                                  <span class="achievement-label">KEY ACHIEVEMENT:</span>
+                                  <h3 class="achievement-title m-0">100% Test Coverage</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row mt-4 text-muted-custom raw-paragraphs">
+                      <div class="col-12">
+                          <p>It provides features for intelligently answering calls in situations where you cannot speak but can still communicate.</p>
+                          <p>Smart call assistant was the most complicated product I worked on, the only product that worked with real calls, mobile and landline, and used the technologies that are unknown for software engineers that never worked with Telekom.</p>
+                          <p>Also, on the project we had international team with 20+ members, which was the biggest team I worked with and the only team where the whole communication was in English, over 2 years. There was mobile team, backend (my team), ML team, voice specialists and others.</p>
+                          <p class="mb-0">This project was the only project where we had on the backend 100% tests coverage, which I am really proud of. It was the part of <strong>Magenta Voice</strong> program.</p>
+                      </div>
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <h5 class="section-subtitle text-center mb-3">WATCH THE DEMO <i class="bi bi-play-circle-fill ms-1"></i></h5>
+                          <div class="video-wrapper">
+                              <iframe
+                                      src="https://www.youtube.com/embed/f5Je1FCM-RE"
+                                      title="Smart Call Assistant"
+                                      frameborder="0"
+                                      allow="accelerometer; clipboard-write; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                      referrerpolicy="strict-origin-when-cross-origin"
+                                      allowfullscreen>
+                              </iframe>
+                          </div>
+                      </div>
+                  </div>
+
               </div>
           </div>
-          <div class="col-12">
-            <p class="mt-2 mb-0">
-              Smart Call Assistant is a voice-controlled AI-powered service that overcomes the
-              drawbacks of synchronous telephone communication.
-            </p>
-            <p class="mb-2">
-              It provides features for intelligently answering calls in situations where
-              you cannot speak but can still communicate.
-            </p>
-              <h5 class="d-inline">Project role</h5> <span class="badge text-bg-info">Main backend developer</span>
-              <h5 class="mt-2 mb-2">Responsibility</h5>
-              <ul class="mb-2">
-                  <li>Leading the implementation of microservices that connect mobile app to ML service.</li>
-                  <li>Making sure that the services are written following the best practices like TDD, SOLID and CLEAN.</li>
-                  <li>Modeling the data layer.</li>
-                  <li>Mentoring the colleagues.</li>
-                  <li>Choosing the right technologies for our solutions.</li>
-                  <li>Making sure that the product is well documented.</li>
-              </ul>
-              <h5 class="d-inline">Technologies & Tools</h5>
-              <span class="badge text-bg-info">Python 3.10</span>
-              <span class="badge text-bg-info">Python 3.8</span>
-              <span class="badge text-bg-info">RasaAI</span>
-              <span class="badge text-bg-info">Starlette</span>
-              <span class="badge text-bg-info">FastApi</span>
-              <span class="badge text-bg-info">SqlAlchemy</span>
-              <span class="badge text-bg-info">Alembic</span>
-              <span class="badge text-bg-info">Asyncio</span>
-              <span class="badge text-bg-info">PostgreSql</span>
-              <span class="badge text-bg-info">GitLab</span>
-              <span class="badge text-bg-info">Azure</span>
-              <span class="badge text-bg-info">Open Telekom Cloud</span>
-              <span class="badge text-bg-info">Grafana</span>
-              <span class="badge text-bg-info">Kibana</span>
-              <span class="badge text-bg-info">Kubernates</span>
-              <span class="badge text-bg-info">Linux</span>
-              <span class="badge text-bg-info">MS techs: TTS, STT</span>
-              <span class="badge text-bg-info">Postman</span>
-              <p class="mt-2 mb-0">
-                  Smart call assistant was the most complicated product I worked on,
-                  the only product that worked with real calls, mobile and landline, and used the
-                  technologies that are unknown for software engineers that never worked with Telekom.
-              </p>
-              <p class="mb-0">
-                Also, on the project we had international team with 20+ members, which was the biggest team
-                I worked with and the only team where the whole communication was in English, over 2 years.
-              </p>
-              <p class="mb-0">
-                  There was mobile team, backend (my team), ML team, voice specialists and others.
-              </p>
-              <p class="mb-0">
-                  This project was the only project where we had on the backend 100% tests coverage,
-                  which I am really proud of.
-              </p>
-              <p class="mb-2">
-                It was the part of Magenta Voice program.
-              </p>
-          </div>
-          <div class="col-md-6 col-sm-12 text-center home-inner-card w-100">
-              <iframe
-                      src="https://www.youtube.com/embed/f5Je1FCM-RE"
-                      title="Smart Call Assistant"
-                      frameborder="0"
-                      allow="accelerometer; clipboard-write; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen>
-              </iframe>
-          </div>
+
       </div>
   </div>
 

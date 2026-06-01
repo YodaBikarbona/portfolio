@@ -2,7 +2,6 @@
 layout: none
 title: "ERP and P&G"
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,68 +10,104 @@ title: "ERP and P&G"
     <title>ERP and P&G</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{'/assets/stylesheets/main.css' | absolute_url}}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="dark-theme">
 
-  <div class="container content mt-5">
-      <div class="row portfolio-page">
-          <div class="col-12 space-line">
-              <h1>ERP and P&G</h1>
-              <div class="d-flex align-items-center mt-2">
-                  <i class="bi bi-building"></i>
-                  <span class="ms-2">
-                      <a href="https://info3.hr/en/" target="_blank">Info3</a>
-                  </span>
+  <div class="container content my-5">
+      <div class="portfolio-card p-4 p-md-5">
+          
+          <div class="row g-4 align-items-start">
+              <!-- LIJEVI STUPAC -->
+              <div class="col-lg-4 text-center">
+                  <div class="robot-img-container mb-4">
+                      <!-- Zamijeni s odgovarajućom slikom -->
+                      <img src="/assets/images/procter_&_gamble_logo.svg.png" alt="ERP and P&G" class="img-fluid rounded-4 robot-img">
+                  </div>
+                  
+                  <div class="quick-meta-box text-start">
+                      <div class="meta-item">
+                          <i class="bi bi-building"></i>
+                          <div>
+                              <small>Company/Client</small>
+                              <p><a href="https://info3.hr/en/" target="_blank">Info3</a></p>
+                          </div>
+                      </div>
+                      <div class="meta-item">
+                          <i class="bi bi-clock-history"></i>
+                          <div>
+                              <small>Duration</small>
+                              <p>1 year 3 months</p>
+                          </div>
+                      </div>
+                      <div class="meta-item">
+                          <i class="bi bi-geo-alt"></i>
+                          <div>
+                              <small>Location</small>
+                              <p>Mostar (remote)</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="d-flex align-items-center mt-2">
-                  <i class="bi bi-clock"></i> <span class="ms-2">1 year 3 months</span>
+
+              <!-- DESNI STUPAC -->
+              <div class="col-lg-8">
+                  <div class="row g-4">
+                      <div class="col-xl-7">
+                          <h1 class="project-title mb-1">ERP and P&G</h1>
+                          <p class="text-muted-custom mb-4">Development of ERP modules and optimization of the Procter & Gamble (P&G) corporate platform with a heavy focus on multi-regional localization.</p>
+
+                          <div class="mb-4">
+                              <h5 class="section-subtitle">Project role</h5>
+                              <span class="custom-badge-role">Fullstack developer</span>
+                          </div>
+
+                          <div class="mb-4">
+                              <h5 class="section-subtitle">Responsibility</h5>
+                              <ul class="custom-list">
+                                  <li>Implement new ERP modules and maintain existing ones.</li>
+                                  <li>Data layer modeling and designing complex reports (SQL/HTML).</li>
+                                  <li>Ensuring module stability and performance.</li>
+                                  <li>P&G platform updates with focus on cross-browser localization stability.</li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <!-- TECH STACK PANEL -->
+                      <div class="col-xl-5">
+                          <div class="tech-stack-panel p-3">
+                              <h5 class="tech-panel-title mb-3">Tech Stack</h5>
+                              
+                              <div class="tech-group mb-3">
+                                  <div class="tech-group-header">Backend & ERP</div>
+                                  <div class="tech-items-row">
+                                      <div class="tech-item-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                                      <div class="tech-item-icon"><i class="bi bi-gear-wide-connected text-primary"></i><span>OpenERP</span></div>
+                                      <div class="tech-item-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Postgres"><span>Postgres</span></div>
+                                  </div>
+                              </div>
+
+                              <div class="tech-group">
+                                  <div class="tech-group-header">Frontend & Tools</div>
+                                  <div class="tech-items-row">
+                                      <div class="tech-item-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                                      <div class="tech-item-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"><span>JS</span></div>
+                                      <div class="tech-item-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- TEKSTUALNI DIO -->
+                  <div class="row mt-4 text-muted-custom raw-paragraphs">
+                      <div class="col-12">
+                          <p>The P&G platform presented a unique challenge due to the sheer number of localizations involved. It was an interesting technical exercise to ensure the solution functioned correctly across all browsers, specifically addressing cross-browser compatibility issues in CSS.</p>
+                          <p class="mb-0">The ERP portion of the work was a direct continuation of my architectural and development practices from previous engagements.</p>
+                      </div>
+                  </div>
               </div>
-          </div>
-          <div class="col-12">
-              <p class="mt-2 mb-0">
-                  ERP work was identical as work in Notus company.
-              </p>
-              <p class="mb-0">
-                  The Procter & Gamble Company (P&G) is an American multinational consumer goods corporation.
-              </p>
-              <p class="mb-0">
-                  The company’s website provides extensive information about its operations,
-                  including detailed insights into its brands, products, and corporate initiatives.
-              </p>
-              <p class="mb-2">
-                  A significant focus of the site is on localization, an area where I have been
-                  particularly involved in optimizing and enhancing the user experience.
-              </p>
-              <h5 class="d-inline">Project role</h5> <span class="badge text-bg-info">Fullstack developer</span>
-              <h5 class="mt-2 mb-2">Responsibility</h5>
-              <ul class="mb-2">
-                  <li>Implement new ERP modules, update existing.</li>
-                  <li>Choosing the right technologies for our solutions.</li>
-                  <li>Modeling the data layer.</li>
-                  <li>Generating and designing complex reports (HTML, SQL).</li>
-                  <li>Making sure that the modules are stable and working without any problems.</li>
-                  <li>Changing the P&G page with new parts, and making that the page is stable with all localizations.</li>
-              </ul>
-              <h5 class="d-inline">Technologies & Tools</h5>
-              <span class="badge text-bg-info">Python 2.8</span>
-              <span class="badge text-bg-info">Open ERP 7.0</span>
-              <span class="badge text-bg-info">XML</span>
-              <span class="badge text-bg-info">HTML</span>
-              <span class="badge text-bg-info">CSS</span>
-              <span class="badge text-bg-info">PostgreSql</span>
-              <span class="badge text-bg-info">Linux</span>
-              <span class="badge text-bg-info">React</span>
-              <span class="badge text-bg-info">JS</span>
-              <p class="mt-2 mb-0">
-                  P&G page is the page with most localisations I ever saw.
-              </p>
-              <p class="mb-2">
-                  It was interesting to work on the project because the solution needed to work on all possible
-                  browsers, and that was the challenge, especially when CSS is not working with some browsers.
-              </p>
           </div>
       </div>
   </div>
