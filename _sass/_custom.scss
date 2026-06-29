@@ -3,44 +3,107 @@
 // --- PRETHODNI MIXINI I PETLJE (ZADRŽANO) ---
 @mixin space($attribute) {
   @for $i from 1 to 6 {
-    &-#{$i} { #{$attribute}: $i * 10px / 1; }
+    &-#{$i} {
+      #{$attribute}: $i * 10px / 1;
+    }
   }
 }
+
 @mixin width-px($attribute) {
   @for $i from 1 to 1000 {
-    &-#{$i} { #{$attribute}: $i * 1px / 1; }
+    &-#{$i} {
+      #{$attribute}: $i * 1px / 1;
+    }
   }
 }
+
 @mixin height-px($attribute) {
   @for $i from 1 to 1000 {
-    &-#{$i} { #{$attribute}: $i * 1px / 1; }
+    &-#{$i} {
+      #{$attribute}: $i * 1px / 1;
+    }
   }
 }
+
 @mixin fontsize-px($attribute) {
   @for $i from 1 to 1000 {
-    &-#{$i} { #{$attribute}: $i * 1px / 1; }
+    &-#{$i} {
+      #{$attribute}: $i * 1px / 1;
+    }
   }
 }
 
-.m { @include space(margin); }
-.mb { @include space(margin-bottom); }
-.mt { @include space(margin-top); }
-.mr { @include space(margin-right); }
-.ml { @include space(margin-left); }
-.p { @include space(padding); }
-.pb { @include space(padding-bottom); }
-.pt { @include space(padding-top); }
-.pr { @include space(padding-right); }
-.pl { @include space(padding-left); }
-.wpx { @include width-px(width); }
-.hpx { @include height-px(height); }
-.font-size-px { @include fontsize-px(font-size); }
+.m {
+  @include space(margin);
+}
 
-.spacer { flex: 1 1 auto; }
-.btn-block { width: 100%; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-left { text-align: left; }
+.mb {
+  @include space(margin-bottom);
+}
+
+.mt {
+  @include space(margin-top);
+}
+
+.mr {
+  @include space(margin-right);
+}
+
+.ml {
+  @include space(margin-left);
+}
+
+.p {
+  @include space(padding);
+}
+
+.pb {
+  @include space(padding-bottom);
+}
+
+.pt {
+  @include space(padding-top);
+}
+
+.pr {
+  @include space(padding-right);
+}
+
+.pl {
+  @include space(padding-left);
+}
+
+.wpx {
+  @include width-px(width);
+}
+
+.hpx {
+  @include height-px(height);
+}
+
+.font-size-px {
+  @include fontsize-px(font-size);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
 
 $bg-dark: #030a16;
 $card-bg-linear: linear-gradient(145deg, #07152e, #040e22);
@@ -58,7 +121,12 @@ body.dark-theme {
   flex-direction: column;
   overflow-x: hidden;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800 !important;
   }
@@ -84,8 +152,15 @@ body.dark-theme {
     color: $text-slate;
   }
 
-  .text-muted-custom { color: $text-slate; }
-  .text-mono-sub { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #576880; }
+  .text-muted-custom {
+    color: $text-slate;
+  }
+
+  .text-mono-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #576880;
+  }
 
   .robot-img-container {
     background: #0b1e3f;
@@ -95,7 +170,13 @@ body.dark-theme {
     display: inline-block;
     width: 100%;
     max-width: 320px;
-    img { width: 100%; height: auto; }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    height: 120px;
   }
 
   .quick-meta-box {
@@ -105,12 +186,17 @@ body.dark-theme {
     border: 1px solid rgba(255, 255, 255, 0.03);
     max-width: 320px;
     margin: 0 auto;
+
     .meta-item {
       display: flex;
       align-items: center;
       gap: 15px;
       margin-bottom: 16px;
-      &:last-child { margin-bottom: 0; }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       i {
         font-size: 1.3rem;
         color: #0ea5e9;
@@ -123,8 +209,20 @@ body.dark-theme {
         align-items: center;
         justify-content: center;
       }
-      small { color: #576880; display: block; font-size: 0.7rem; text-transform: uppercase; }
-      p { margin: 0; font-weight: 600; font-size: 0.9rem; color: $text-light; }
+
+      small {
+        color: #576880;
+        display: block;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: $text-light;
+      }
     }
   }
 
@@ -149,12 +247,20 @@ body.dark-theme {
   .custom-list {
     list-style: none;
     padding-left: 0;
+
     li {
       position: relative;
       padding-left: 20px;
       margin-bottom: 10px;
       color: #b4c6ef;
-      &::before { content: "✓"; color: $neon-blue; position: absolute; left: 0; font-weight: bold; }
+
+      &::before {
+        content: "✓";
+        color: $neon-blue;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
     }
   }
 
@@ -164,7 +270,10 @@ body.dark-theme {
     border: 1px solid rgba(56, 189, 248, 0.15);
     border-radius: 18px;
 
-    .tech-panel-title { font-size: 1rem; color: #ffffff; }
+    .tech-panel-title {
+      font-size: 1rem;
+      color: #ffffff;
+    }
 
     .tech-group {
       background: rgba(21, 34, 56, 0.5);
@@ -222,12 +331,28 @@ body.dark-theme {
     background: linear-gradient(90deg, #09254d 0%, #051833 100%);
     border: 1px solid #0284c7;
     border-radius: 14px;
-    .achievement-icon-wrap { font-size: 2rem; color: $neon-blue; }
-    .achievement-label { font-size: 0.65rem; color: $neon-blue; display: block; }
-    .achievement-title { font-size: 1.4rem; color: #ffffff; }
+
+    .achievement-icon-wrap {
+      font-size: 2rem;
+      color: $neon-blue;
+    }
+
+    .achievement-label {
+      font-size: 0.65rem;
+      color: $neon-blue;
+      display: block;
+    }
+
+    .achievement-title {
+      font-size: 1.4rem;
+      color: #ffffff;
+    }
   }
 
-  .raw-paragraphs p { margin-bottom: 12px; color: #a3b3cc; }
+  .raw-paragraphs p {
+    margin-bottom: 12px;
+    color: #a3b3cc;
+  }
 
   .video-wrapper {
     position: relative;
@@ -236,7 +361,14 @@ body.dark-theme {
     overflow: hidden;
     border-radius: 16px;
     background: #000;
-    iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -266,11 +398,15 @@ body.dark-theme {
     display: flex;
     justify-content: center;
     gap: 20px;
+
     a {
       font-size: 1.5rem;
       color: #94a3b8;
       transition: color 0.2s;
-      &:hover { color: #38bdf8; }
+
+      &:hover {
+        color: #38bdf8;
+      }
     }
   }
 
@@ -284,123 +420,138 @@ body.dark-theme {
 
 // Dodaj u _sass/_main.scss
 .portfolio-card {
-    background: $card-bg-linear;
-    border: 1px solid $card-border;
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-    padding: 2rem;
+  background: $card-bg-linear;
+  border: 1px solid $card-border;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
 }
 
 // Osigurava da se slika i tekst lijepo slažu na desktopu
-@media (min-width: 992px) {
-    .robot-img-container {
-        margin-top: 0;
-        width: 100%;
-        max-width: 100%;
-    }
+@media (min-width: 0px) {
+  .robot-img-container {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+  }
 }
 
 /* Glavni page*/
 
 /* Glavni tamni card stil */
-.portfolio-card, .home-outer-card {
-    background-color: #0b1e3f; /* Ovo je ona tamno plava boja */
-    border-radius: 20px;
-    padding: 30px;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    height: 100%;
+.portfolio-card,
+.home-outer-card {
+  background-color: #0b1e3f;
+  /* Ovo je ona tamno plava boja */
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  height: 100%;
 }
 
 /* Stil za profilnu sliku */
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border: 4px solid #38bdf8; /* Plavi krug oko slike */
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #38bdf8;
+  /* Plavi krug oko slike */
+  object-fit: cover;
 }
 
 /* Stil za kartice radova */
 .work-item-wrapper {
-    background: #0b1e3f;
-    border-radius: 15px;
-    padding: 20px;
-    transition: transform 0.2s;
+  background: #0b1e3f;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.2s;
 }
 
 .work-item-wrapper:hover {
-    transform: translateY(-5px);
-    border: 1px solid #38bdf8;
+  transform: translateY(-5px);
+  border: 1px solid #38bdf8;
 }
 
 /* Popravak veličine ikona u vještinama */
 .skills-grid .skill-icon img {
-    width: 32px !important;  /* Fiksna veličina ikone */
-    height: 32px !important;
-    object-fit: contain;
+  width: 32px !important;
+  /* Fiksna veličina ikone */
+  height: 32px !important;
+  object-fit: contain;
 }
 
 /* Osiguravanje da krugovi budu uredni */
 .skill-icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.05); /* Blaga prozirna pozadina */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  /* Blaga prozirna pozadina */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 /* Profilna slika - fiksna veličina i krug */
 .profile-img {
-    width: 150px !important;
-    height: 150px !important;
-    border: 4px solid #38bdf8; /* Plavi obrub */
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+  width: 150px !important;
+  height: 150px !important;
+  border: 4px solid #38bdf8;
+  /* Plavi obrub */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 /* Osiguraj da ikone vještina budu male i poredane */
 .skill-icon img {
-    width: 30px !important;
-    height: 30px !important;
-    display: inline-block;
+  width: 30px !important;
+  height: 30px !important;
+  display: inline-block;
 }
 
 /* Stilovi za profilni dio */
 .profile-center {
+  color: #f1f5f9;
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .bio-text {
     color: #f1f5f9;
-    
-    h3 { font-size: 1.25rem; }
-    
-    .bio-text {
-        color: #f1f5f9;
-        line-height: 1.6;
-        strong { color: #38bdf8; } // Neon plava za istaknute dijelove
+    line-height: 1.6;
+
+    strong {
+      color: #38bdf8;
     }
+
+    // Neon plava za istaknute dijelove
+  }
 }
 
 .skill-item {
-    font-size: 0.65rem;
-    color: #94a3b8;
-    img {
-        display: block;
-        margin: 0 auto 4px auto;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 6px;
-        border-radius: 10px;
-    }
+  font-size: 0.65rem;
+  color: #94a3b8;
+
+  img {
+    display: block;
+    margin: 0 auto 4px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    border-radius: 10px;
+  }
 }
 
 .contact-btns .btn {
-    padding: 6px 16px;
-    border-radius: 8px;
-    font-size: 0.8rem;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
 
-    :hover {
-      background-color: #38bdf8;
-    }
+  :hover {
+    background-color: #38bdf8;
+  }
 }
 
 body {
@@ -408,40 +559,61 @@ body {
 
   .dark-theme {
     .work-card {
-        background: #0f172a; /* Tamno plava */
-        border: 1px solid rgba(56, 189, 248, 0.2);
-        border-radius: 16px;
-        padding: 20px;
-        position: relative;
-        transition: transform 0.2s;
-        max-width: 350px;
-        
-        &:hover { transform: translateY(-5px); border-color: $neon-blue; }
+      background: #0f172a;
+      /* Tamno plava */
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 16px;
+      padding: 20px;
+      position: relative;
+      transition: transform 0.2s;
+      max-width: 350px;
 
-        .work-img-wrap { height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; }
-        
-        .badge-featured { background: rgba(56, 189, 248, 0.1); color: $neon-blue; padding: 4px 10px; border-radius: 6px; font-size: 0.7rem; }
-        
-        .work-tech-stack { display: flex; gap: 10px; margin: 15px 0; }
+      &:hover {
+        transform: translateY(-5px);
+        border-color: $neon-blue;
+      }
+
+      .work-img-wrap {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      .badge-featured {
+        background: rgba(56, 189, 248, 0.1);
+        color: $neon-blue;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 0.7rem;
+      }
+
+      .work-tech-stack {
+        display: flex;
+        gap: 10px;
+        margin: 15px 0;
+        height: 30px;
+      }
     }
   }
 
 }
 
 .section-title-with-line {
-    color: #fff;
-    font-weight: 800;
-    text-align: center; // Centriranje samog teksta
-    margin-bottom: 20px;
-    
-    &::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 3px;
-        background: #38bdf8;
-        margin: 10px auto 0 auto; // "auto" na lijevoj i desnoj strani centrira liniju
-    }
+  color: #fff;
+  font-weight: 800;
+  text-align: center; // Centriranje samog teksta
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #38bdf8;
+    margin: 10px auto 0 auto; // "auto" na lijevoj i desnoj strani centrira liniju
+  }
 }
 
 .work {
@@ -450,32 +622,41 @@ body {
 }
 
 .home-work-card {
-    background-color: #0b1e3f; /* Ovo je ona tamno plava boja */
-    border-radius: 20px;
-    padding: 30px;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    height: 600px;
+  background-color: #0b1e3f;
+  /* Ovo je ona tamno plava boja */
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  height: 600px;
 }
 
 .work-image {
-  max-height: 130px;
+  height: stretch;
 }
 
 .btn-work-light {
-    width: 100%;
-    --bs-btn-color: #f8f9fa;
-    --bs-btn-border-color: #f8f9fa;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #f8f9fa;
-    --bs-btn-hover-border-color: #f8f9fa;
-    --bs-btn-focus-shadow-rgb: 248, 249, 250;
-    --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #f8f9fa;
-    --bs-btn-active-border-color: #f8f9fa;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #f8f9fa;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #f8f9fa;
-    --bs-gradient: none;
+  width: 100%;
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-focus-shadow-rgb: 248, 249, 250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f8f9fa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-gradient: none;
+}
+
+.descriptionTitle {
+  height: 300px;
+}
+
+.button-more {
+  height: 40px;
 }
